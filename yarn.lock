@@ -128,6 +128,15 @@
   dependencies:
     tslib "^2.3.0"
 
+"@angular/cdk@^13.1.0":
+  version "13.1.0"
+  resolved "https://registry.yarnpkg.com/@angular/cdk/-/cdk-13.1.0.tgz#e594a3131d8334112a42447ec30e862b8d410323"
+  integrity sha512-OOMDmXnCpodYMEbRro8FUcXqQ8UN3lU/OXnuuDhHOJIrb7loizSGKkJdaVLZtM9ygH7qbOxRhkC2efjmtIn48g==
+  dependencies:
+    tslib "^2.3.0"
+  optionalDependencies:
+    parse5 "^5.0.0"
+
 "@angular/cli@~13.0.3":
   version "13.0.4"
   resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-13.0.4.tgz#28932cb8e2c9e1eb4a65db459be851932f51eecd"
@@ -1208,6 +1217,20 @@
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@jridgewell/resolve-uri/-/resolve-uri-1.0.0.tgz#3fdf5798f0b49e90155896f6291df186eac06c83"
   integrity sha512-9oLAnygRMi8Q5QkYEU4XWK04B+nuoXoxjRvRxgjuChkLZFBja0YPSgdZ7dZtwhncLBcQe/I/E+fLuk5qxcYVJA==
+
+"@nebular/auth@^9.0.0":
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/@nebular/auth/-/auth-9.0.0.tgz#c34b7fafa5acaeb924bd7a3b1a28d1273ab6bc02"
+  integrity sha512-pZ/pihUpY9KWNC+U0AQ+pBepYHJNPOboSx8NDc7IDKOV0umz1wb+lPgctRGL9NIC0128zcCT/W0dp7M4h7f5bQ==
+  dependencies:
+    tslib "^2.3.0"
+
+"@nebular/theme@^9.0.0":
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/@nebular/theme/-/theme-9.0.0.tgz#38873776b61baf7240f372e0fbdcd261ad15375b"
+  integrity sha512-IwqAsmjVPDSRM3cwH+UBTZKupxdXZz7NHw3/tTZgfLf3bBg3xW3Cr+abnqDTJv1ue0dIPDCCvUSNVNxtaFW7lQ==
+  dependencies:
+    tslib "^2.3.0"
 
 "@ngtools/webpack@13.0.4":
   version "13.0.4"
@@ -4629,6 +4652,11 @@ parse5-sax-parser@^6.0.1:
   integrity sha512-kXX+5S81lgESA0LsDuGjAlBybImAChYRMT+/uKCEXFBFOeEhS52qUCydGhU3qLRD8D9DVjaUo821WK7DM4iCeg==
   dependencies:
     parse5 "^6.0.1"
+
+parse5@^5.0.0:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/parse5/-/parse5-5.1.1.tgz#f68e4e5ba1852ac2cadc00f4555fff6c2abb6178"
+  integrity sha512-ugq4DFI0Ptb+WWjAdOK16+u/nHfiIrcE+sh8kZMaM0WllQKLI9rOUq6c2b7cwPkXdzfQESqvoqK6ug7U/Yyzug==
 
 parse5@^6.0.1:
   version "6.0.1"
