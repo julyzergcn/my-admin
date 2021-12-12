@@ -8,8 +8,13 @@ import {
   NbRequestPasswordComponent,
   NbResetPasswordComponent,
 } from '@nebular/auth';
+import { LayoutComponent } from './layout/layout.component';
 
 const routes: Routes = [
+  {
+    path: '',
+    component: LayoutComponent
+  },
   {
     path: 'auth',
     component: NbAuthComponent,
