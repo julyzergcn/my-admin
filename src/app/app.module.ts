@@ -8,6 +8,8 @@ import {
   NbThemeModule, NbLayoutModule, NbSidebarModule, NbButtonModule
 } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
+import { HttpClientModule } from '@angular/common/http';
+import { NbAuthModule, NbPasswordAuthStrategy } from '@nebular/auth';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,17 @@ import { NbEvaIconsModule } from '@nebular/eva-icons';
     NbLayoutModule,
     NbSidebarModule.forRoot(),
     NbButtonModule,
-    NbEvaIconsModule
+    NbEvaIconsModule,
+    HttpClientModule,
+
+    NbAuthModule.forRoot({
+      strategies: [
+        NbPasswordAuthStrategy.setup({
+          name: 'email',
+        }),
+      ],
+      forms: {},
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]
