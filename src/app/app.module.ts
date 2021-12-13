@@ -34,6 +34,20 @@ import { AuthGardService } from './auth-gard.service';
       strategies: [
         NbPasswordAuthStrategy.setup({
           name: 'email',
+          token: {
+            key: 'auth_token'
+          },
+          baseEndpoint: '/api/auth',
+          login: {
+            endpoint: '/token/login/',
+          },
+          register: {
+            endpoint: '/users/',
+          },
+          logout: {
+            endpoint: '/token/logout/',
+            method: 'post',
+          },
         }),
       ],
       forms: {},
