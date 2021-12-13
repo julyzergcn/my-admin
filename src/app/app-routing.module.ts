@@ -8,12 +8,14 @@ import {
   NbRequestPasswordComponent,
   NbResetPasswordComponent,
 } from '@nebular/auth';
+import { AuthGardService } from './auth-gard.service';
 import { LayoutComponent } from './layout/layout.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: LayoutComponent
+    component: LayoutComponent,
+    canActivate: [AuthGardService]
   },
   {
     path: 'auth',

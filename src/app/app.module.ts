@@ -11,6 +11,7 @@ import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { HttpClientModule } from '@angular/common/http';
 import { NbAuthModule, NbPasswordAuthStrategy } from '@nebular/auth';
 import { LayoutComponent } from './layout/layout.component';
+import { AuthGardService } from './auth-gard.service';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,9 @@ import { LayoutComponent } from './layout/layout.component';
       forms: {},
     }),
   ],
-  providers: [],
+  providers: [
+    AuthGardService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
