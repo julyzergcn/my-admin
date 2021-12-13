@@ -1,7 +1,12 @@
 <nb-layout>
 
   <nb-layout-header fixed>
-  My Admin
+    <a (click)="toggleSidebar()" href="#" class="sidebar-toggle">
+      <nb-icon icon="menu-2-outline"></nb-icon>
+    </a>
+    <a class="logo" href="/">
+      My Admin
+    </a>
   </nb-layout-header>
 
   <nb-sidebar>Sidebar Content</nb-sidebar>

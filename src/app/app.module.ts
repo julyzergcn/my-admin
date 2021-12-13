@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
-  NbThemeModule, NbLayoutModule, NbSidebarModule, NbButtonModule
+  NbThemeModule, NbLayoutModule, NbSidebarModule, NbButtonModule, NbIconModule
 } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { HttpClientModule } from '@angular/common/http';
@@ -26,6 +26,7 @@ import { LayoutComponent } from './layout/layout.component';
     NbSidebarModule.forRoot(),
     NbButtonModule,
     NbEvaIconsModule,
+    NbIconModule,
     HttpClientModule,
 
     NbAuthModule.forRoot({
